@@ -80,12 +80,12 @@ El objetivo fue evaluar la capacidad de retención de usuarios a lo largo del ti
 # Vista Previa del Dashboard
 
 ## Funnel Analysis
-![embudo_general_por_pais](embudo_general_por_pais.png)
+![embudo_general_por_pais](image/embudo_general_por_pais.png)
 
 ---
 
 ## Retention Analysis
-![retención_por_pais_D7-D8](retención_por_pais_D7-D8.png)
+![retención_por_pais_D7-D8](image/retención_por_pais_D7-D8.png)
 
 ---
 
