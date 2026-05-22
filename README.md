@@ -85,7 +85,7 @@ El objetivo fue evaluar la capacidad de retención de usuarios a lo largo del ti
 ---
 
 ## Retention Analysis
-![Retention Chart](images/retention_chart.png)
+![Retention Chart](retención_por_pais_D7-D8.png)
 
 ---
 
