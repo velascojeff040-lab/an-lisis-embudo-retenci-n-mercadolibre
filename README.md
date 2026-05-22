@@ -80,7 +80,7 @@ El objetivo fue evaluar la capacidad de retención de usuarios a lo largo del ti
 # Vista Previa del Dashboard
 
 ## Funnel Analysis
-![Funnel Chart](images/funnel_chart.png)
+![Funnel Chart](embudo_general_por_pais.png)
 
 ---
 
