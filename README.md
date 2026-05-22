@@ -75,19 +75,6 @@ El objetivo fue evaluar la capacidad de retención de usuarios a lo largo del ti
 - La retención disminuye significativamente después del día 7.
 - Algunas cohortes muestran mejor estabilidad en retención de largo plazo.
 
----
-
-# Vista Previa del Dashboard
-
-## Funnel Analysis
-![embudo_general_por_pais](imágenes/embudo_general_por_pais.png)
-
----
-
-## Retention Analysis
-![retención_por_pais_D7-D8](imágenes/retención_por_pais_D7-D8.png)
-
----
 
 # Estructura del Proyecto
 
