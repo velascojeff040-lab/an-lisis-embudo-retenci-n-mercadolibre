@@ -1,24 +1,25 @@
 # Análisis de Embudo y Retención — MercadoLibre
 
 ## Descripción del Proyecto
+
 Este proyecto analiza el comportamiento de usuarios dentro del embudo de conversión y las métricas de retención para usuarios de MercadoLibre en distintos países.
 
-El objetivo principal es identificar:
-- en qué etapa los usuarios abandonan el proceso,
-- qué países tienen mejor desempeño,
-- y cómo evoluciona la retención de usuarios a lo largo del tiempo.
+El análisis fue desarrollado utilizando Excel, Google Sheets y SQL con el objetivo de identificar oportunidades de mejora en conversión, retención y experiencia de usuario.
 
 ---
 
-## Objetivos
-- Analizar el rendimiento del embudo de conversión
-- Comparar tasas de conversión por país
-- Evaluar retención de usuarios desde D7 hasta D28
-- Detectar oportunidades de mejora en conversión y retención
+# Objetivos del Proyecto
+
+- Analizar el rendimiento del embudo de conversión.
+- Identificar las principales etapas de abandono.
+- Comparar conversiones entre países.
+- Evaluar retención de usuarios por cohortes.
+- Generar insights accionables para negocio.
 
 ---
 
-## Herramientas Utilizadas
+# Herramientas Utilizadas
+
 - Excel
 - Google Sheets
 - SQL
@@ -26,46 +27,69 @@ El objetivo principal es identificar:
 
 ---
 
-## Etapas del Embudo
-- select_item
-- add_to_cart
-- begin_checkout
-- purchase
+# Etapas del Embudo
+
+El análisis incluye las siguientes etapas del funnel:
+
+1. `first_visit`
+2. `select_item`
+3. `add_to_cart`
+4. `begin_checkout`
+5. `add_shipping_info`
+6. `add_payment_info`
+7. `purchase`
 
 ---
 
-## Hallazgos Principales
-- La mayor caída de usuarios ocurre entre `select_item` y `add_to_cart`.
-- Uruguay presenta el mejor desempeño de conversión.
+# Análisis Realizados
+
+## 1. Análisis de Embudo por País
+
+Se calcularon tasas de conversión por etapa del funnel segmentadas por país para identificar diferencias de comportamiento entre mercados.
+
+### Métricas principales:
+- Conversión a selección de producto
+- Conversión a carrito
+- Conversión a checkout
+- Conversión a compra
+
+---
+
+## 2. Análisis de Retención por Cohortes
+
+Se analizaron cohortes mensuales de usuarios para medir retención acumulada en:
+
+- D7
+- D14
+- D21
+- D28
+
+El objetivo fue evaluar la capacidad de retención de usuarios a lo largo del tiempo.
+
+---
+
+# Hallazgos Principales
+
+- La mayor caída del embudo ocurre entre `select_item` y `add_to_cart`.
+- Uruguay presenta la mejor conversión hacia compra.
 - La retención disminuye significativamente después del día 7.
-- Algunos países mantienen mejores niveles de retención a largo plazo.
+- Algunas cohortes muestran mejor estabilidad en retención de largo plazo.
 
 ---
 
-## Vista Previa del Dashboard
+# Vista Previa del Dashboard
 
-### Análisis de Embudo
+## Funnel Analysis
 ![Funnel Chart](images/funnel_chart.png)
 
-### Análisis de Retención
+---
+
+## Retention Analysis
 ![Retention Chart](images/retention_chart.png)
 
 ---
 
-## Ejemplos de SQL
-Consultas SQL utilizadas para replicar el análisis:
-
-```sql
-SELECT
-    event_name,
-    COUNT(DISTINCT user_id) AS users
-FROM events
-GROUP BY event_name;
-```
-
----
-
-## Estructura del Proyecto
+# Estructura del Proyecto
 
 ```text
 mercadolibre-funnel-retention-analysis
@@ -87,12 +111,40 @@ mercadolibre-funnel-retention-analysis
 
 ---
 
-## Recomendaciones de Negocio
-- Optimizar la experiencia de add_to_cart para reducir el abandono.
-- Implementar campañas de reactivación después del día 7.
-- Replicar estrategias de adquisición de los países con mejor desempeño.
+# Consultas SQL Incluidas
+
+El proyecto incluye consultas SQL para:
+
+- Validación de eventos disponibles
+- Construcción del embudo de conversión
+- Conversión segmentada por país
+- Retención por cohortes
+- Cálculo de métricas acumuladas
 
 ---
 
-## Autor
-Proyecto de portafolio enfocado en análisis de embudo, métricas de retención y visualización de datos.
+# Recomendaciones de Negocio
+
+- Optimizar la experiencia de `add_to_cart` para reducir abandono.
+- Implementar campañas de reactivación después del día 7.
+- Replicar estrategias de adquisición de países con mejor desempeño.
+- Mejorar la experiencia mobile en etapas críticas del funnel.
+
+---
+
+# Aprendizajes del Proyecto
+
+Durante este proyecto se trabajó en:
+
+- Análisis exploratorio de datos
+- Construcción de funnels
+- Análisis de cohortes
+- SQL para métricas de producto
+- Storytelling con datos
+- Visualización de KPIs
+
+---
+
+# Autor
+
+Proyecto de portafolio enfocado en análisis de datos, métricas de producto y visualización de información utilizando Excel, SQL y Google Sheets.
